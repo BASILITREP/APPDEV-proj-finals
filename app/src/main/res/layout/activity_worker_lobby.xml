@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkerLobby">
+
+    <ImageView
+        android:id="@+id/AppLogo"
+        android:layout_width="85dp"
+        android:layout_height="73dp"
+
+        android:layout_marginStart="16dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="AppName"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AppLogo"
+        app:layout_constraintTop_toBottomOf="@+id/AppLogo" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="27dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="27dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Services Offered!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/Yourlocation"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+    <EditText
+        android:id="@+id/Yourlocation"
+        android:layout_width="128dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.977" />
+    <Button
+        android:id="@+id/sservices"
+        android:layout_width="317dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:text="Search Services to accept "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="302dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine3"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
