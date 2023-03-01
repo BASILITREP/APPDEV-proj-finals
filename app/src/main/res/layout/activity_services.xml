@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/appbg"
+    android:background="@drawable/servicio"
     tools:context=".Services">
 
 
@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6LUTO"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button7BILI"
@@ -27,7 +27,8 @@
         app:layout_constraintEnd_toStartOf="@+id/button8YAYA"
         app:layout_constraintHorizontal_bias="0.723"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5LABA" />
+        app:layout_constraintTop_toBottomOf="@+id/button5LABA"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button6LUTO"
@@ -43,7 +44,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="AppName"
+        android:text="SERVICIO"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,23 +58,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="List of Customers!"
+        android:text="LOCATION"
         android:textSize="20dp"
+        android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/location"
+        app:layout_constraintEnd_toStartOf="@+id/serLoc"
         app:layout_constraintHorizontal_bias="0.359"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <EditText
-        android:id="@+id/location"
-        android:layout_width="128dp"
-        android:layout_height="26dp"
-        android:layout_marginEnd="36dp"
+    <Spinner
+        android:id="@+id/serLoc"
+        android:layout_width="248dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
         android:id="@+id/sservices"
@@ -80,6 +82,7 @@
         android:layout_height="56dp"
         android:layout_marginTop="48dp"
         android:text="Search Services for you"
+        android:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -93,7 +96,7 @@
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/logo" />
 
     <Button
         android:id="@+id/button5LABA"
