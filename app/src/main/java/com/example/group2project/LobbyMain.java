@@ -12,6 +12,9 @@ import com.google.android.material.button.MaterialButton;
 public class LobbyMain extends AppCompatActivity {
     private Button services;
 
+    Button Bcancel;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +22,12 @@ public class LobbyMain extends AppCompatActivity {
         setContentView(R.layout.activity_lobby_main);
 
 
-        TextView username = findViewById(R.id.username);
-        TextView password = findViewById(R.id.password);
+        EditText username = findViewById(R.id.username);
+        EditText password = findViewById(R.id.password);
 
         Button buttonLogin = (Button) findViewById(R.id.buttonLogin);
+        Bcancel = findViewById(R.id.buttonCancel);
+
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,10 +41,17 @@ public class LobbyMain extends AppCompatActivity {
                 else
                 {
                     Toast.makeText(LobbyMain.this, "LOGIN FAILED", Toast.LENGTH_SHORT).show();
-
                 }
             }
 
+        });
+
+        Bcancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
         });
     }
 

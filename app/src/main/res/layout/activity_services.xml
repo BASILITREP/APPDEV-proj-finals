@@ -8,37 +8,6 @@
     tools:context=".Services">
 
 
-    <Button
-        android:id="@+id/button8YAYA"
-        android:layout_width="155dp"
-        android:layout_height="155dp"
-        android:layout_marginEnd="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6LUTO"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button7BILI"
-        android:layout_width="155dp"
-        android:layout_height="155dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button8YAYA"
-        app:layout_constraintHorizontal_bias="0.723"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5LABA"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button6LUTO"
-        android:layout_width="155dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sservices" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -53,39 +22,17 @@
         app:layout_constraintStart_toStartOf="@+id/AppLogo"
         app:layout_constraintTop_toBottomOf="@+id/AppLogo" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="LOCATION"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/serLoc"
-        app:layout_constraintHorizontal_bias="0.359"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <Spinner
-        android:id="@+id/serLoc"
-        android:layout_width="248dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
     <Button
         android:id="@+id/sservices"
         android:layout_width="317dp"
         android:layout_height="56dp"
-        android:layout_marginTop="48dp"
-        android:text="Search Services for you"
+        android:layout_marginTop="88dp"
         android:backgroundTint="@color/black"
+        android:text="Search Services for you"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <ImageView
         android:id="@+id/AppLogo"
@@ -97,17 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
-
-    <Button
-        android:id="@+id/button5LABA"
-        android:layout_width="155dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="40dp"
-
-        app:layout_constraintEnd_toStartOf="@+id/button6LUTO"
-        app:layout_constraintHorizontal_bias="0.723"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sservices" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -128,6 +64,51 @@
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_info_24" />
+
+    <ImageButton
+        android:id="@+id/walis"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/cleanlogo2"
+        app:layout_constraintEnd_toStartOf="@+id/laba"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sservices" />
+
+    <ImageButton
+        android:id="@+id/luto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/cooklogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/grocery"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/walis"
+        app:layout_constraintTop_toBottomOf="@+id/walis"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/laba"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        android:src="@drawable/washlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sservices" />
+
+    <ImageButton
+        android:id="@+id/grocery"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/groclogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/laba"
+        app:layout_constraintTop_toBottomOf="@+id/laba"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
